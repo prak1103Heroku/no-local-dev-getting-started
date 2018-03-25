@@ -11,11 +11,11 @@ end
 
 
 class Contact < ActiveRecord::Base
-  self.table_name = 'salesforce.contact'
+  self.table_name = 'salesforce.UserLogin'
 end
 
-get "/contacts" do
-  @contacts = Contact.all
+get "/UserLogin" do
+  @UserLogins = UserLogin.all
   erb :index
 end
 
